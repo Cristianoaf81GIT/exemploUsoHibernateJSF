@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html 
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:f="http://xmlns.jcp.org/jsf/core">
+	  
+<h:head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="viewport" content="width=device-width,
+ initial-scale=1.0, shrink-to-fit=no"/>
+ 
+ <!--css - bootstrap 4 !-->
+ 	<h:outputStylesheet library="webjars"
+ 	 name="bootstrap/4.1.3/css/bootstrap.min-jsf.css"/>
+ 	 
+	 
+ <!-- javascript! -->
+ 	<h:outputScript library="webjars" name="jquery/3.3.1-2/jquery.min.js"/>
+ 	
+ 	<!-- plugin de máscara do jquery ! -->
+ 	<h:outputScript library="webjars" 
+ 	name="jquery-mask-plugin/1.14.15/dist/jquery.mask.js"/>
+ 	
+ 	<h:outputScript library="webjars" name="popper.js/1.14.6/umd/popper.min.js"/>
+ 	<h:outputScript library="webjars" name="bootstrap/4.1.3/js/bootstrap.min.js"/>
+ 	
+ 	<style>
+	.container{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	</style>
+ 
+<title>Cadastro de usuários</title>
+
+</h:head>
+
+<h:body>
+	<div class="container">
+		<h1 class="text-danger">
+			<h:outputText value="#{usuarioBEAN.usuario.nome}"/>
+			, Seja Bem Vindo(a)!
+		</h1>
+		<br/>
+		
+		Seu Cadastro foi concluído com sucesso!!!<br/>
+		
+		<h:form>
+		Clique&#160;<a href="login.jsf" class="btn btn-danger">Aqui</a>
+		</h:form>
+		
+	</div>
+</h:body>
+</html>
